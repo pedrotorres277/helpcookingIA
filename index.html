@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Deliciosas - Blog de Culinária</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- icones -->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Receitas Deliciosas</h1>
+            <p>Receitas Rápidas, Feitas com o que Você Tem!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="ideia.html">Como funciona?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <article class="news">
+                <h2>Nova Receita: Lasanha à Bolonhesa</h2>
+                <p class="date">06 de Novembro de 2024</p>
+                <p>Aprenda a fazer uma deliciosa lasanha à bolonhesa, com um molho caseiro e camadas de queijo que derretem na boca...</p>
+                <a href="#">Leia mais</a>
+            </article>
+
+            <article class="news">
+                <h2>Como Preparar o Melhor Bolo de Chocolate</h2>
+                <p class="date">05 de Novembro de 2024</p>
+                <p>Quer fazer um bolo de chocolate fofinho e irresistível? Confira a nossa receita super simples e deliciosa...</p>
+                <a href="#">Leia mais</a>
+            </article>
+            
+            <button id="loadMoreBtn">Carregar mais receitas</button>
+        </div>
+
+        <aside>
+            <div class="pesquisaPt1">
+                <h3>Receitas em Alta</h3>
+                <ul>
+                    <li>Massas</li>
+                    <li>Doces</li>
+                    <li>Café da Manhã</li>
+                    <li>Vegetariano</li>
+                </ul>
+            </div>
+            <div class="pesquisaPt2">
+                <h3>Digite seus ingredientes:</h3>
+                <input type="text" id="ingredienteInput" required placeholder="Ex: Mussarela" style="padding: 8px;">
+                <button id="addIngredienteBtn" style="padding: 10px;">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button type="button" style="padding: 10px;">
+                    <i class="fas fa-search"></i> Pesquisar
+                </button>
+
+                <!-- Lista de ingredientes -->
+                <ul id="ingredientesLista" style="list-style-type: none; padding: 0;">
+                    <!-- Os itens adicionados aparecerão aqui -->
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Receitas Deliciosas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/037ce470d2.js" crossorigin="anonymous"></script>
+</body>
+</html>
